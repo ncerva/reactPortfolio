@@ -1,3 +1,53 @@
 .projects{
     background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ul {
+    margin: 10px;
+    padding: 0%;
+    list-style: none;
+    display: flex;
+}
+
+.li {
+    font-size: 30px;
+    margin: 50px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.container{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img {
+    height: 500px;
+    width: 660px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.item {
+    width: 220px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+.h3 {
+    position: absolute;
+    font-size: 20px;
 }
