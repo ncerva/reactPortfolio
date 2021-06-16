@@ -2,23 +2,16 @@
     background-color: white;
     color: black;
     width: 100%;
-    height: 70px;
+    height: 130px;
     position:fixed;
     top: 0%;
-    z-index: 2;
+    z-index: 1;
 }
 .wrapper {
     padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.logo {
-    color: blue;
-    font-size: 40px;
-    text-decoration: none;
-    margin-right: 40px;
 }
 
 .left{ 
@@ -35,4 +28,23 @@
 .icon {
     font-size: 30px;
     margin-right: 15px;
+}
+
+#name {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
+    font-size: 130px;
+}
+
+.rapper{
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: -20px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+    font-family: 'Nunito Sans', sans-serif;
 }
