@@ -10,10 +10,10 @@ export default function Introduction() {
             </div>
             <div className="right">
                 <div className="wrapper">
-                <h1 className="introtxt"> Welcome to my Portfolio</h1>
+                <h1 className="introtxt"> Welcome to my Portfolio.</h1>
             </div>
             <a href="#projects" className="anchor">
-                <img className="arrowimg" src="assets/images/arrow.png" alt=""></img>
+                <img className="arrowimg" src="../assets/images/arrow.png" alt=""></img>
             </a>
             </div>
         </div>

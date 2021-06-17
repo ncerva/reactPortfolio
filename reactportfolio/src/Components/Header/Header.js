@@ -7,7 +7,7 @@ export default function Header() {
             <div className="wrapper" id="name"> NAYELI CERVANTES</div>
             <div className="rapper">
                     <div className="itemContainer">
-                        <span> About</span>
+                        <span> Home</span>
                     </div>
                     <div className="itemContainer">
                         <span> Projects</span>

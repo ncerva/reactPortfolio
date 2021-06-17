@@ -3,11 +3,11 @@
     display: flex;
 }
 .left{
-flex: 0.5;
+flex: 0.7;
 overflow: hidden;
 }
 .right{
-    flex: 0.5;
+    flex: 0.7;
     position: relative;
     overflow: hidden;
 }
@@ -26,7 +26,7 @@ overflow: hidden;
 .wrapper{
     width: 100%;
     height: 100%;
-    padding-left: 50px;
+    padding-left: 100px;
     display:flex;
 }
 
@@ -42,7 +42,13 @@ overflow: hidden;
 }
 
 .introtxt {
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 800;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+}
+
+.paragraph {
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
     font-size: 64px;
 }
