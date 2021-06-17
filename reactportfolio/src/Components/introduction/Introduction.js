@@ -5,12 +5,12 @@ export default function Introduction() {
         <div className="introduction" id="introduction">
             <div className="left">
                 <div className="imgContainer">
-                    <img className="img" src="assets/images/me.jpeg" alt=""/>
+                    <img className="img" src="../assets/images/me.jpeg" alt=""/>
                 </div>
             </div>
             <div className="right">
                 <div className="wrapper">
-                <h2> Hello my name is Nayeli</h2>
+                <h1 className="introtxt"> Welcome to my Portfolio</h1>
             </div>
             <a href="#projects" className="anchor">
                 <img className="arrowimg" src="assets/images/arrow.png" alt=""></img>
