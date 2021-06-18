@@ -4,8 +4,10 @@ export default function Introduction() {
     return (
         <div className="introduction" id="introduction">
             <div className="left">
+                <div id="circle">
                 <div className="imgContainer">
-                    <img className="img" src="../assets/images/me.jpeg" alt=""/>
+                    <img className="img" src="../assets/images/cutout.png" alt=""/>
+                </div>
                 </div>
             </div>
             <div className="right">

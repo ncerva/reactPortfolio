@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .ul {
@@ -19,11 +22,12 @@
 }
 
 .container{
-    width: 70%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .img {
@@ -38,7 +42,7 @@
     height: 150px;
     border-radius: 20px;
     margin: 10px 20px;
-    display: flex;
+    display: inline;
     align-items: center;
     justify-content: center;
     color: white;
@@ -49,4 +53,17 @@
 .h3 {
     position: absolute;
     font-size: 20px;
+}
+
+.portfolio {
+    font-size: 45px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: rgb(125, 125, 129);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

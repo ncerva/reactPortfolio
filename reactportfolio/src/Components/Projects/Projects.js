@@ -1,20 +1,68 @@
-import React from 'react'
-import "./projects.css"
+import React, { useEffect, useState } from 'react';
+import ProjectList from '../projectList/projectList.js';
+import "./projects.css";
+import {
+    featuredProjects,
+    Coding,
+    graphicDesign
+} from "../../data";
 
 export default function Projects() {
+    const [select, setSelect] = useState("featured");
+    const [data, setData] = useState([]);
+
+    const list = [
+        {
+            id: "featured",
+            title: "FEATURED",
+        },
+        {
+            id: "coding",
+            title: "CODING",
+        },
+        {
+            id: "graphicDesign",
+            title: "GRAPHIC DESIGN",
+        },
+    ]
+
+    useEffect(() => {
+        switch (select) {
+            case "featured":
+                setData(featuredProjects);
+                break;
+                case "coding":
+                setData(Coding);
+                break;
+                case "graphicDesign":
+                setData(graphicDesign);
+                break;
+                default: setData(featuredProjects);
+        }
+    }, [select])
+
     return (
         <div className="projects" id="projects">
-            <h1>Portfolio </h1>
-            <ul className="ul">
-                <li className="li">Coding Bootcamp</li>
-                <li className="li">Graphic Design</li>
+            <h1 className="portfolio">Projects </h1>
+            <ul>
+            {list.map(item=>(
+                <ProjectList 
+                title={item.title} 
+                active={select === item.id}
+                setSelect={setSelect}
+                id={item.id}/>
+            ))}
             </ul>
+            
             <div className="container">
-                <div className="item">
-            <img className="img" src="../assets/images/podcastJunkie.png" alt=""></img>
-            <h3 className="h3"> Podcast Junkie</h3>
+                {data.map((d) => (
+                    <div className="item">
+            <img className="img" src={d.img} alt=""></img>
+            <h3 className="h3"> {d.title}</h3>
             </div>
+                ))}
+
             </div>
         </div>
-    )
+    );
 }
