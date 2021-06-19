@@ -5,7 +5,7 @@ import {
     featuredProjects,
     Coding,
     graphicDesign
-} from "../../data";
+} from "../../data.js";
 
 export default function Projects() {
     const [select, setSelect] = useState("featured");
@@ -24,7 +24,7 @@ export default function Projects() {
             id: "graphicDesign",
             title: "GRAPHIC DESIGN",
         },
-    ]
+    ];
 
     useEffect(() => {
         switch (select) {
@@ -39,13 +39,12 @@ export default function Projects() {
                 break;
                 default: setData(featuredProjects);
         }
-    }, [select])
+    }, [select]);
 
     return (
         <div className="projects" id="projects">
-            <h1 className="portfolio">Projects </h1>
             <ul>
-            {list.map(item=>(
+            {list.map((item)=>(
                 <ProjectList 
                 title={item.title} 
                 active={select === item.id}
@@ -57,11 +56,12 @@ export default function Projects() {
             <div className="container">
                 {data.map((d) => (
                     <div className="item">
-            <img className="img" src={d.img} alt=""></img>
+            <img className="img" 
+            src={d.img} 
+            alt=""></img>
             <h3 className="h3"> {d.title}</h3>
             </div>
                 ))}
-
             </div>
         </div>
     );

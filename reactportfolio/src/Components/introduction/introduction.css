@@ -20,16 +20,12 @@ overflow: hidden;
     display: inline;
 }
 
-#circle {
-    height: 710px;
-    width: 700px;
-    background-color: rgb(153, 147, 147);
-    border-radius: 50%;
-    float: right;
-}
-
 .img {
-    height: 110%;
+    height: 80%;
+    height: 630px;
+    width: 700px;
+    margin-top: 180px;
+    margin-left: 80px;
 }
 
 .wrapper{

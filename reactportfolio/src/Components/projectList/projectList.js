@@ -1,5 +1,5 @@
-import React from 'react'
-import "./projectList.css"
+import React from 'react';
+import "./projectList.css";
 
 export default function projectList({ id, title, active, setSelect }) {
     return (
@@ -9,5 +9,5 @@ export default function projectList({ id, title, active, setSelect }) {
         >
             {title}
         </li>
-    )
+    );
 }

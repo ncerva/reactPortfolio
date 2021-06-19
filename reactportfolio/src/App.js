@@ -1,10 +1,9 @@
-import React from 'react'
+import React from 'react';
 import Header from "./Components/header/Header";
 import Projects from "./Components/projects/Projects";
 import Footer from "./Components/footer/Footer";
 import Introduction from "./Components/introduction/Introduction";
 import Contact from "./Components/contact/Contact";
-import "./app.css"
 
 function App() {
   return (
